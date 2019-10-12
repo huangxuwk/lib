@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>javascript</title>
+	<link rel="stylesheet" type="text/css" href="./res/css/index.css">
+</head>
+<body>
+	<p class="blockCenter topic">欢迎注册聊天室</p>
+	<form>
+		<table class="blockCenter loginTableStyle">
+			<tr>
+				<td class="leftTd">账号</td>
+				<td><input id="id" class="rightTd" name="name" type="text" placeholder="请输入账号"></td>
+			</tr>
+			<tr>
+				<td class="leftTd">密码</td>
+				<td><input id="password" class="rightTd" name="psw" type="password" placeholder="4-12个字符"></td>
+			</tr>
+			<tr>
+				<td class="leftTd">确认</td>
+				<td><input id="passwordSure" class="rightTd" type="password" placeholder="4-12个字符"></td>
+			</tr>
+			<tr>
+				<td class="leftTd">性别</td>
+				<td>
+					<input id="sexMale" class="rightTd" name="sex" type="radio"><label for="sexMale">男</label>
+					<input id="sexFemale" class="rightTd" name="sex" type="radio"><label for="sexFemale">女<label>
+				</td>
+			</tr>
+			<tr>
+				<td class="leftTd">爱好</td>
+				<td>
+					<input id="hobbySleep" class="rightTd" name="hobby" type="checkbox"><label for="hobbySleep">睡觉</label>
+					<input id="hobbyGame" class="rightTd" name="hobby" type="checkbox"><label for="hobbyGame">电游</label>
+					<input id="hobbyClimb" class="rightTd" name="hobby" type="checkbox"><label for="hobbyClimb">爬山</label>
+					<input id="hobbyHit" class="rightTd" name="hobby" type="checkbox"><label for="hobbyHit">咥锤</label><br>
+					<input id="btnHobbyAll" type="button" value="全选">
+					<input id="btnHobbyRev" type="button" value="反选">
+					<input id="btnHobbyClear" type="button" value="清空">
+				</td>
+			</tr>
+			<tr>
+				<td class="leftTd">出生日期</td>
+				<td>
+					<select id="birthYear" name="birthYear"></select>年
+					<select id="birthMonth" name="birthMonth"></select>月
+					<select id="birthDate" name="birthDate"></select>日
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+<script type="text/javascript" src="./res/js/index.js">
+	/* alert("Hello, javascript!"); */
+	/* console.log("Hello, javascript!");*/
+</script>
+</html>

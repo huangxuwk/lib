@@ -1,0 +1,22 @@
+.blockCenter {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.topic {
+	font-family: 微软雅黑;
+	font-size: 36px;
+	color: blue;
+}
+
+.loginTableStyle {
+	width: 400px;
+}
+
+.leftTd {
+	/* width: 15%;*/
+}
+
+.rightTd {
+	/* width: 95%;*/
+}
