@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="./res/css/index.css">
+</head>
+<body>
+    <p style="height:100px"></p>
+    <p class="blockCenter topic">欢迎登陆</p>
+    <table class="loginTableStyle blockCenter">
+        <tr>
+            <td class="leftTd">账    号</td>
+            <td><input id="id" class="rightTd" type="text" name="name"  placeholder="请输入账号"></td>
+        </tr>
+       <tr>
+            <td class="leftTd">密 码</td>
+            <td><input id="password" class="rightTd" type="password" name="psw" placeholder="8-18个字符c"></td>
+        </tr>
+        <tr>
+            <td class="leftTd">确 认</td>
+            <td><input id="password" class="rightTd" type="passwordSure" name="psw" placeholder="8-18个字符"></td>
+        </tr>
+        <tr>
+            <td class="leftTd">性 别</td>
+            <td>
+                <input id="sexMale" type="radio" name="sex"><label for="sexMale">男</label>
+                <input id="sexFamale" type="radio" name="sex"><label for="sexFamale">女</label></td>
+        </tr>
+        <tr>
+            <td class="leftTd">爱 好</td>
+            <td>
+                <input id="hobbySleep" type="checkbox" name="hobby"><label for="hobbySleep">睡觉</label>
+                <input id="hobbyGame" type="checkbox" name="hobby"><label for="hobbyGame">电竞</label>
+                <input id="hobbyStudy" type="checkbox" name="hobby"><label for="hobbyStudy">学习</label><br>
+
+                <input id="buttonAll" type="button" value="全选">
+                <input id="buttonRev" type="button" value="反选">
+                <input id="buttonClear" type="button" value="清空">
+            </td>
+        </tr>
+        <tr>
+            <td class="leftTd">出生日期</td>
+            <td>
+                <select id="birthYear" name="birthYear"></select>年
+                <select id="birthMonth" name="birthMonth"></select>月
+                <select id="birthDate" name="birthDate"></select>日
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit"></td>
+        </tr>   
+    </table> 
+</body>
+<script type="text/javascript" src="./res/js/index.js"></script>
+</html>
