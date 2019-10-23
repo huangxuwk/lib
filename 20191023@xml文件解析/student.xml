@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student id="03191001" name="张三" sex="男">
+		<hobby>爬山</hobby>
+		<hobby>游泳</hobby>
+	</student>
+	<student id="03191002" name="丽丽" sex="女">
+		<hobby>跳舞</hobby>
+		<hobby>唱歌</hobby>
+	</student>
+</students>
