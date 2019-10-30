@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+	<mapping class="com.hx.mis.model.SDMModel" table="sys_sch_dep_maj_info">
+		<column id="true" property="id" name="id"></column>
+		<column property="name" name="name"></column>
+		<column property="status" name="status"></column>
+	</mapping>
+	<mapping class="com.hx.mis.model.StudentModel" table="sys_student_info">
+		<column property="id" name="id"></column>
+		<column id="true" property="stuId" name="stu_id"></column>
+		<column property="name" name="name"></column>
+		<column property="nativer" name="native"></column>
+		<column property="national" name="nation"></column>
+		<column property="sdm" name="s_d_m"></column>
+		<column property="status" name="status"></column>
+	</mapping>
+	<mapping class="com.hx.mis.model.NativeModel" table="sys_native_cnst">
+		<column id="true" property="id" name="id"></column>
+		<column property="name" name="name"></column>
+	</mapping>
+	<mapping class="com.hx.mis.model.NationModel" table="sys_nation_cnst">
+		<column id="true" property="id" name="id"></column>
+		<column property="name" name="name"></column>
+	</mapping>
+</mappings>
