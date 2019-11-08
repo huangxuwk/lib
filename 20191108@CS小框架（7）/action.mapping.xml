@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action name="login" class="com.mec.test_cs.server.action.UserAction" method="login">
+		<para name="id" type="string"></para>
+		<para name="password" type="string"></para>
+	</action>
+	<action name="getFriendList" class="com.mec.test_cs.server.action.UserAction" method="getFriendList">
+		<para name="id" type="string"></para>
+		<para name="password" type="string"></para>
+	</action>
+</actions>
