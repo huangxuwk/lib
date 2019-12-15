@@ -1,0 +1,27 @@
+#divTable {
+	width: 500px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.captionStyle {
+	font-size: 24px;
+	color: blue;
+	text-align: center;
+}
+
+.someStyle {
+	width: 400px;
+	background: pink;
+}
+
+.modal-size {
+	width: 400px;
+	background: pink;
+}
+
+.modal-topic-style {
+	font-size: 36px;
+	color: blue;
+	text-align: center;
+}
