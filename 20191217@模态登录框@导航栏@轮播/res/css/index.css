@@ -1,0 +1,20 @@
+.modalLoginTopic {
+	font-family: 微软雅黑;
+	color: #1F03BC;
+	font-size: 28;
+	text-align: center;
+}
+
+.modalLoginStyle {
+	width: 350px;
+	height: 240px;
+}
+
+.carouselPic {
+	height: 160px;
+}
+
+.carouselPicWidth {
+	width: 100px;
+	margin: 0 auto;
+}
