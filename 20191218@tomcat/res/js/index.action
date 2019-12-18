@@ -1,0 +1,10 @@
+(function (){
+	$$.package("com.mec.video");
+	
+	$$.action("doLogin", function () {
+		var id = $("#txtId").val();
+		var password = $("#pswPassword").val();
+		password = $$.hashcode(password);
+		console.log(id, password);
+	});
+})();
