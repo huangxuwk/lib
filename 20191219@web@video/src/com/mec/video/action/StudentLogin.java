@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.mec.video.model.StudentInfo;
 import com.mec.video.service.StudentService;
@@ -39,25 +40,16 @@ public class StudentLogin extends HttpServlet {
 		if (student == null) {
 			response.sendRedirect("loginError.html");
 		} else {
+			HttpSession session = request.getSession();
+			session.setAttribute("id", student.getId());
+			
 			String name = student.getName();
 			name = URLEncoder.encode(name, "utf-8");
 			response.setCharacterEncoding("utf-8");
 			response.setContentType("text/html;charset=utf-8");
-			response.sendRedirect("videoSelector.html?id=" + student.getId()
-					+ "&name=" + name);
+			response.sendRedirect("video/videoSelector.jsp?id=" + student.getId()
+			+ "&name=" + name);
 		}
-//		PrintWriter out = response.getWriter();
-//		String loginOkHtmlString = "<!DOCTYPE html>"
-//		+ "<html>"
-//		+ "<head>"
-//		+ "<meta charset='UTF-8'>"
-//		+ "<title>µÇÂ¼³É¹¦</title>"
-//		+ "</head>"
-//		+ "<body>"
-//			+ "<p>Login Ok!</p>"
-//		+ "</body>"
-//		+ "</html>";
-//		out.append(loginOkHtmlString);
 		
 	}
 
