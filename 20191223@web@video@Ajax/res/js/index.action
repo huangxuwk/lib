@@ -1,0 +1,13 @@
+(function (){
+	$$.package("com.mec.video");
+	
+	$$.action("doLogin", function () {
+		var id = $("#txtId").val();
+		var password = $("#pswPassword").val();
+		password = $$.hashcode(password);
+		$("#modalLogin").modal("hide");
+		
+		var loginRequest = "login?id=" + id + "&password=" + password;
+		window.location = loginRequest;
+	});
+})();

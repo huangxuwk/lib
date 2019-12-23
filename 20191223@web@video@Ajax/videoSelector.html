@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>微易码视频选择</title>
+</head>
+<body>
+	<p>欢迎<span id="id"></span>(<span id="name"></span>)</p>
+	<p>请选择视频</p>
+</body>
+<script type="text/javascript">
+	var ognl = location.search.substring(1);
+	var paras = ognl.split("&");
+	var idPara = paras[0].split("=");
+	var namePara = paras[1].split("=");
+	var id = idPara[1];
+	var name = namePara[1];
+	name = decodeURI(name, "utf-8");
+	
+	var idEle = document.getElementById("id");
+	idEle.innerHTML = id;
+	var nameEle = document.getElementById("name");
+	nameEle.innerText = name;
+	console.log(id, name);
+</script>
+</html>
